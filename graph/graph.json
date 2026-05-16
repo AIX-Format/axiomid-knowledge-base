@@ -1,0 +1,1231 @@
+{
+  "generated": "2026-05-16T18:49:26.771862",
+  "total_docs": 34,
+  "total_edges": 155,
+  "nodes": [
+    {
+      "id": "L0-axiomid",
+      "title": "AxiomID — Root Authority (L0)",
+      "status": "stable",
+      "tags": [
+        "identity",
+        "xp",
+        "wallet",
+        "axiomid"
+      ],
+      "layer": "L0",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "L1-aix-format",
+      "title": "AIX Format — Protocol & DNA (L1)",
+      "status": "stable",
+      "tags": [
+        "protocol",
+        "dna",
+        "packages",
+        "schema",
+        "identity"
+      ],
+      "layer": "L1",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "L2-iqra",
+      "title": "IQRA — Sovereign AI Runtime (L2)",
+      "status": "stable",
+      "tags": [
+        "runtime",
+        "memory",
+        "damir",
+        "quran",
+        "evolution",
+        "llm"
+      ],
+      "layer": "L2",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "L3-aix-agent-skills",
+      "title": "AIX Agent Skills — Marketplace (L3)",
+      "status": "stable",
+      "tags": [
+        "skills",
+        "marketplace",
+        "x402",
+        "payment",
+        "governance"
+      ],
+      "layer": "L3",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "L4-alphaaxiom",
+      "title": "AlphaAxiom — Trading Engine (L4)",
+      "status": "stable",
+      "tags": [
+        "trading",
+        "python",
+        "risk",
+        "trading-signals"
+      ],
+      "layer": "L4",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "L5-piworker-os",
+      "title": "PiWorker-OS — Pi Treasury & Body (L5)",
+      "status": "stable",
+      "tags": [
+        "pi-network",
+        "treasury",
+        "escrow",
+        "go",
+        "fleet"
+      ],
+      "layer": "L5",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "L6-gemclaw",
+      "title": "GemClaw — Voice Services (L6)",
+      "status": "stable",
+      "tags": [
+        "voice",
+        "gemini",
+        "websocket",
+        "audio",
+        "agent-creation"
+      ],
+      "layer": "L6",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "architecture",
+      "title": "AIX Architecture — Cross-System Flows",
+      "status": "stable",
+      "tags": [
+        "architecture",
+        "flows",
+        "identity",
+        "payment",
+        "orchestration"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "brain-build-plan",
+      "title": "Brain Build Plan — Code Migration",
+      "status": "in-progress",
+      "tags": [
+        "migration",
+        "iqra",
+        "piworker",
+        "integration"
+      ],
+      "layer": "L2,L5",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "changelog",
+      "title": "AIX Sovereign Stack — Changelog",
+      "status": "stable",
+      "tags": [
+        "changelog",
+        "updates",
+        "history"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "clean-room-skills",
+      "title": "Clean Room — 7 Skills from IQRA to L3",
+      "status": "stable",
+      "tags": [
+        "skills",
+        "clean-room",
+        "iqra",
+        "marketplace",
+        "migration"
+      ],
+      "layer": "L2,L3",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "cleanup-plan",
+      "title": "AIX Cleanup Plan — Dead Code & Duplicates",
+      "status": "stable",
+      "tags": [
+        "cleanup",
+        "dead-code",
+        "duplicates",
+        "optimization"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "codebase-sizes",
+      "title": "Codebase Sizes — Full Line Count",
+      "status": "stable",
+      "tags": [
+        "sizing",
+        "statistics",
+        "lines-of-code"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "cross-system-flows",
+      "title": "Cross-System Integration Flows",
+      "status": "stable",
+      "tags": [
+        "integration",
+        "flows",
+        "identity",
+        "payment",
+        "memory"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "decisions",
+      "title": "Architectural Decisions (ADRs)",
+      "status": "stable",
+      "tags": [
+        "decisions",
+        "architecture",
+        "adr"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "execution-plan-10h",
+      "title": "10-Hour Execution Plan",
+      "status": "in-progress",
+      "tags": [
+        "plan",
+        "execution",
+        "timeline"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "full-code-map",
+      "title": "Full Code Map — Every Repo",
+      "status": "stable",
+      "tags": [
+        "code",
+        "structure",
+        "map",
+        "all-repos"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "full-skills-map",
+      "title": "Full Skills Map — All 7 Repos",
+      "status": "stable",
+      "tags": [
+        "skills",
+        "marketplace",
+        "map",
+        "all-repos"
+      ],
+      "layer": "L2,L3,L4",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "human-body-architecture",
+      "title": "Human Body Architecture — AIX Sovereign Stack",
+      "status": "stable",
+      "tags": [
+        "architecture",
+        "metaphor",
+        "layers"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "implementation-roadmap",
+      "title": "Implementation Roadmap",
+      "status": "in-progress",
+      "tags": [
+        "roadmap",
+        "implementation",
+        "phases"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "index",
+      "title": "AIX Knowledge Base — Dashboard",
+      "status": "stable",
+      "tags": [
+        "index",
+        "dashboard",
+        "overview",
+        "graph"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "iqra-core-security",
+      "title": "IQRA — Core Runtime & Security Deep Map",
+      "status": "stable",
+      "tags": [
+        "iqra",
+        "core",
+        "security",
+        "damir",
+        "runtime"
+      ],
+      "layer": "L2",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "iqra-evolution-llm",
+      "title": "IQRA — Evolution + LLM + AIX Protocol",
+      "status": "stable",
+      "tags": [
+        "iqra",
+        "evolution",
+        "llm",
+        "protocols",
+        "cognitive"
+      ],
+      "layer": "L2",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "iqra-reading-status",
+      "title": "IQRA Reading Status",
+      "status": "stable",
+      "tags": [
+        "iqra",
+        "reading-status",
+        "progress"
+      ],
+      "layer": "L2",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "jules-prompts",
+      "title": "Jules AI — 7 Prompts for Automation",
+      "status": "stable",
+      "tags": [
+        "prompts",
+        "automation",
+        "jules",
+        "testing"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "memory-systems-comparison",
+      "title": "Memory Systems — Full Comparison",
+      "status": "stable",
+      "tags": [
+        "memory",
+        "comparison",
+        "iqra",
+        "piworker",
+        "gemclaw"
+      ],
+      "layer": "L2,L5,L6",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "pi-network",
+      "title": "Pi Network — Integration & Deployment Plan",
+      "status": "stable",
+      "tags": [
+        "pi-network",
+        "deployment",
+        "domain-claim",
+        "validation-key"
+      ],
+      "layer": "L0,L5",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "roadmap",
+      "title": "AIX Sovereign Stack — Roadmap",
+      "status": "in-progress",
+      "tags": [
+        "roadmap",
+        "planning",
+        "high-priority"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "sessions/session-2026-05-14",
+      "title": "Session Log — 2026-05-14",
+      "status": "stable",
+      "tags": [
+        "session",
+        "history",
+        "initial-setup"
+      ],
+      "layer": "all",
+      "updated": "2026-05-14"
+    },
+    {
+      "id": "sessions/session-2026-05-15",
+      "title": "Session Log — 2026-05-15",
+      "status": "stable",
+      "tags": [
+        "session",
+        "history",
+        "cleanup",
+        "iqra"
+      ],
+      "layer": "all",
+      "updated": "2026-05-15"
+    },
+    {
+      "id": "sessions/session-2026-05-16",
+      "title": "Session Log — 2026-05-16",
+      "status": "stable",
+      "tags": [
+        "session",
+        "history",
+        "cleanup",
+        "iqra",
+        "kdb"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "stack-map",
+      "title": "AIX Stack — Full Map",
+      "status": "stable",
+      "tags": [
+        "stack",
+        "packages",
+        "dependencies",
+        "map"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "stack-overview",
+      "title": "AIX Sovereign Stack — Overview",
+      "status": "stable",
+      "tags": [
+        "stack",
+        "architecture",
+        "layers",
+        "overview"
+      ],
+      "layer": "all",
+      "updated": "2026-05-16"
+    },
+    {
+      "id": "x402-plan",
+      "title": "x402 Payment Unification Plan",
+      "status": "in-progress",
+      "tags": [
+        "x402",
+        "payment",
+        "unification",
+        "pi",
+        "marketplace"
+      ],
+      "layer": "L1,L3,L5",
+      "updated": "2026-05-16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "L0-axiomid",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "L0-axiomid",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "L0-axiomid",
+      "target": "pi-network",
+      "type": "related"
+    },
+    {
+      "source": "L0-axiomid",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "L1-aix-format",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "L1-aix-format",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "L1-aix-format",
+      "target": "pi-network",
+      "type": "related"
+    },
+    {
+      "source": "L1-aix-format",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "L2-iqra",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "L2-iqra",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "L2-iqra",
+      "target": "architecture",
+      "type": "related"
+    },
+    {
+      "source": "L2-iqra",
+      "target": "memory-systems-comparison",
+      "type": "related"
+    },
+    {
+      "source": "L2-iqra",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "L3-aix-agent-skills",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "L3-aix-agent-skills",
+      "target": "pi-network",
+      "type": "related"
+    },
+    {
+      "source": "L3-aix-agent-skills",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "L3-aix-agent-skills",
+      "target": "x402-plan",
+      "type": "related"
+    },
+    {
+      "source": "L4-alphaaxiom",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "L4-alphaaxiom",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "L4-alphaaxiom",
+      "target": "clean-room-skills",
+      "type": "related"
+    },
+    {
+      "source": "L4-alphaaxiom",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "L5-piworker-os",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "L5-piworker-os",
+      "target": "L4-alphaaxiom",
+      "type": "related"
+    },
+    {
+      "source": "L5-piworker-os",
+      "target": "brain-build-plan",
+      "type": "related"
+    },
+    {
+      "source": "L5-piworker-os",
+      "target": "pi-network",
+      "type": "related"
+    },
+    {
+      "source": "L5-piworker-os",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "L5-piworker-os",
+      "target": "x402-plan",
+      "type": "related"
+    },
+    {
+      "source": "L6-gemclaw",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "L6-gemclaw",
+      "target": "architecture",
+      "type": "related"
+    },
+    {
+      "source": "L6-gemclaw",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "architecture",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "architecture",
+      "target": "cross-system-flows",
+      "type": "related"
+    },
+    {
+      "source": "architecture",
+      "target": "human-body-architecture",
+      "type": "related"
+    },
+    {
+      "source": "architecture",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "brain-build-plan",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "brain-build-plan",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "brain-build-plan",
+      "target": "cleanup-plan",
+      "type": "related"
+    },
+    {
+      "source": "brain-build-plan",
+      "target": "implementation-roadmap",
+      "type": "related"
+    },
+    {
+      "source": "changelog",
+      "target": "decisions",
+      "type": "related"
+    },
+    {
+      "source": "changelog",
+      "target": "roadmap",
+      "type": "related"
+    },
+    {
+      "source": "changelog",
+      "target": "sessions/session-2026-05-16",
+      "type": "related"
+    },
+    {
+      "source": "clean-room-skills",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "clean-room-skills",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "clean-room-skills",
+      "target": "cleanup-plan",
+      "type": "related"
+    },
+    {
+      "source": "clean-room-skills",
+      "target": "full-skills-map",
+      "type": "related"
+    },
+    {
+      "source": "cleanup-plan",
+      "target": "brain-build-plan",
+      "type": "related"
+    },
+    {
+      "source": "cleanup-plan",
+      "target": "clean-room-skills",
+      "type": "related"
+    },
+    {
+      "source": "cleanup-plan",
+      "target": "x402-plan",
+      "type": "related"
+    },
+    {
+      "source": "codebase-sizes",
+      "target": "full-code-map",
+      "type": "related"
+    },
+    {
+      "source": "codebase-sizes",
+      "target": "stack-map",
+      "type": "related"
+    },
+    {
+      "source": "cross-system-flows",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "cross-system-flows",
+      "target": "architecture",
+      "type": "related"
+    },
+    {
+      "source": "cross-system-flows",
+      "target": "human-body-architecture",
+      "type": "related"
+    },
+    {
+      "source": "cross-system-flows",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "decisions",
+      "target": "architecture",
+      "type": "related"
+    },
+    {
+      "source": "decisions",
+      "target": "brain-build-plan",
+      "type": "related"
+    },
+    {
+      "source": "decisions",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "decisions",
+      "target": "roadmap",
+      "type": "related"
+    },
+    {
+      "source": "decisions",
+      "target": "x402-plan",
+      "type": "related"
+    },
+    {
+      "source": "execution-plan-10h",
+      "target": "brain-build-plan",
+      "type": "related"
+    },
+    {
+      "source": "execution-plan-10h",
+      "target": "implementation-roadmap",
+      "type": "related"
+    },
+    {
+      "source": "execution-plan-10h",
+      "target": "roadmap",
+      "type": "related"
+    },
+    {
+      "source": "full-code-map",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "full-code-map",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "full-code-map",
+      "target": "L6-gemclaw",
+      "type": "related"
+    },
+    {
+      "source": "full-code-map",
+      "target": "codebase-sizes",
+      "type": "related"
+    },
+    {
+      "source": "full-code-map",
+      "target": "stack-map",
+      "type": "related"
+    },
+    {
+      "source": "full-skills-map",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "full-skills-map",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "full-skills-map",
+      "target": "clean-room-skills",
+      "type": "related"
+    },
+    {
+      "source": "human-body-architecture",
+      "target": "architecture",
+      "type": "related"
+    },
+    {
+      "source": "human-body-architecture",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "implementation-roadmap",
+      "target": "decisions",
+      "type": "related"
+    },
+    {
+      "source": "implementation-roadmap",
+      "target": "execution-plan-10h",
+      "type": "related"
+    },
+    {
+      "source": "implementation-roadmap",
+      "target": "roadmap",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "L4-alphaaxiom",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "L6-gemclaw",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "architecture",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "brain-build-plan",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "clean-room-skills",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "cleanup-plan",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "codebase-sizes",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "cross-system-flows",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "decisions",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "execution-plan-10h",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "full-code-map",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "full-skills-map",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "human-body-architecture",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "implementation-roadmap",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "iqra-core-security",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "iqra-evolution-llm",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "iqra-reading-status",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "memory-systems-comparison",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "pi-network",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "roadmap",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "sessions/session-2026-05-14",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "sessions/session-2026-05-15",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "sessions/session-2026-05-16",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "stack-map",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "index",
+      "target": "x402-plan",
+      "type": "related"
+    },
+    {
+      "source": "iqra-core-security",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "iqra-core-security",
+      "target": "iqra-evolution-llm",
+      "type": "related"
+    },
+    {
+      "source": "iqra-core-security",
+      "target": "iqra-reading-status",
+      "type": "related"
+    },
+    {
+      "source": "iqra-evolution-llm",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "iqra-evolution-llm",
+      "target": "iqra-core-security",
+      "type": "related"
+    },
+    {
+      "source": "iqra-evolution-llm",
+      "target": "iqra-reading-status",
+      "type": "related"
+    },
+    {
+      "source": "iqra-reading-status",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "iqra-reading-status",
+      "target": "iqra-core-security",
+      "type": "related"
+    },
+    {
+      "source": "iqra-reading-status",
+      "target": "iqra-evolution-llm",
+      "type": "related"
+    },
+    {
+      "source": "jules-prompts",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "jules-prompts",
+      "target": "cleanup-plan",
+      "type": "related"
+    },
+    {
+      "source": "memory-systems-comparison",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "memory-systems-comparison",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "memory-systems-comparison",
+      "target": "L6-gemclaw",
+      "type": "related"
+    },
+    {
+      "source": "pi-network",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "pi-network",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "pi-network",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "pi-network",
+      "target": "roadmap",
+      "type": "related"
+    },
+    {
+      "source": "roadmap",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "roadmap",
+      "target": "decisions",
+      "type": "related"
+    },
+    {
+      "source": "roadmap",
+      "target": "execution-plan-10h",
+      "type": "related"
+    },
+    {
+      "source": "roadmap",
+      "target": "implementation-roadmap",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-14",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-14",
+      "target": "sessions/session-2026-05-15",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-14",
+      "target": "sessions/session-2026-05-16",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-15",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-15",
+      "target": "sessions/session-2026-05-14",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-15",
+      "target": "sessions/session-2026-05-16",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-16",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-16",
+      "target": "sessions/session-2026-05-14",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-16",
+      "target": "sessions/session-2026-05-15",
+      "type": "related"
+    },
+    {
+      "source": "stack-map",
+      "target": "codebase-sizes",
+      "type": "related"
+    },
+    {
+      "source": "stack-map",
+      "target": "full-code-map",
+      "type": "related"
+    },
+    {
+      "source": "stack-map",
+      "target": "stack-overview",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "L4-alphaaxiom",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "L6-gemclaw",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "architecture",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "human-body-architecture",
+      "type": "related"
+    },
+    {
+      "source": "stack-overview",
+      "target": "roadmap",
+      "type": "related"
+    },
+    {
+      "source": "x402-plan",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "x402-plan",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "x402-plan",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "x402-plan",
+      "target": "pi-network",
+      "type": "related"
+    }
+  ]
+}
