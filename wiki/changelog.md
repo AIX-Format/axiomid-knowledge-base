@@ -37,7 +37,14 @@ related:
 - CODEBASE-SIZES.md v3 with real-code numbers
 - SESSION-2026-05-16.md with 3rd and 4th sessions
 - KDB restructured into wikigraph format with YAML frontmatter + `wikilinks`
-- Quartz static site configured for GitHub Pages
+- Quartz static site built (34→143 pages), **deployed on Vercel**: https://axiomid-knowledge-base.vercel.app
+
+### axiomid.app Production
+- Deployed to Vercel, aliased to https://axiomid.app
+- **Ghost.build Postgres** database `axiomid-db` provisioned and connected
+- **UserAgent model**: one AI agent per user with publicId for cross-product use
+- **Agent API**: create/fetch/activate endpoints live (`/api/agent*`)
+- Pi domain claimed (pending Vercel config)
 
 ---
 
