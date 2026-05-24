@@ -12,6 +12,35 @@ related:
 
 # AIX Sovereign Stack — Changelog
 
+## Session 10: 2026-05-24 (Late Night Fixes)
+
+### Critical Bug Fixes
+- **Pi SDK v2 Auth Routing**: Fixed `wallet-context.tsx` to call `/api/auth/pi` (v2 `authenticate({scope, onIncompletePaymentFound})`) instead of `/api/auth/connect` with v1-style array callback. Pi SDK v2 has **no `Pi.init()`** — don't add it.
+- **Vercel Build Error**: Fixed syntax error in `page.tsx:299-300` (extra `)` and `}`) causing 26s build failure.
+- **KDB Vercel 404**: Fixed `.gitignore` — `content` matched `quartz/content/` too. Changed to `/content`.
+- **Agent Routes**: Made Pi token verification conditional — only for `pi:*` wallets, skip for demo.
+- **Homepage Cleanup**: Removed status/stats/missions cards that duplicated dashboard.
+- **Test Fix**: `auth-connect.test.ts` tier `Ghost` → `Registered`.
+- **Deleted empty `marketplace/` directory** (old standalone page, superseded by dashboard).
+
+### Vercel Deployments Status
+- **axiomid-project** (https://axiomid.app): Production ✅, Preview fixed ✅
+- **KDB** (https://axiomid-knowledge-base.vercel.app): Build fixed ✅, domain alias needs Vercel Dashboard fix
+
+### Architecture Rules Added
+- See [[sessions/session-2026-05-24#Session-10-2026-05-24-Late-Night-Fixes|Session 10 Rules]] for agent guidelines.
+
+## Session 9: 2026-05-24 (Evening)
+
+### Pi SDK & Sandbox Payments Implementation
+* **Pi.init Integration:** Implemented client-side `Pi.init` with automatic versioning and `sandbox` environment detection.
+* **Sandbox Container Fixes:** Set script tag `data-sandbox="true"` inside `pi-sdk.ts`.
+* **Server Payments API:** Created backend API routes for `/api/pi/payment/approve` and `/api/pi/payment/complete` communicating with Pi Platform API using the `PI_API_KEY`.
+* **Promise-Wrapped payment flow:** Integrated required SDK callbacks (`onReadyForServerApproval`, `onReadyForServerCompletion`, `onCancel`, `onError`) in `createPiPayment` and linked them to the server API endpoints.
+* **Dynamic /dashboard Marketplace:** Loaded `skills.json` and `personas.json` from `aix-agent-skills` repository dynamically. Replaced hardcoded dashboard marketplace with a tabbed interface showcasing real agent skills and Arabic IQRA personas.
+* **Wallet Context Updates:** Migrated all wallet authentication flows to use `/api/auth/connect` to resolve 401/403 errors with demo wallets.
+* **Vercel Deploy:** Deployed the Next.js app to production Vercel (`https://axiomid.app`).
+
 ## Session 8: 2026-05-24 (Afternoon)
 
 ### Knowledge Base & Link Validation

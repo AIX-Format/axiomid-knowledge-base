@@ -60,6 +60,30 @@ related:
 4. Add this page to `wiki/index.md` quick navigation
 5. Run `python scripts/update-wiki.py` to regenerate graph.json
 
+## ⚠️ CRITICAL ARCHITECTURE RULES (DO NOT VIOLATE)
+
+### Core Architecture
+1. **KDB is NOT connected to axiomid-project code.** They are separate Vercel deployments. KDB is ONLY a wiki for agents/team.
+2. **Do NOT modify axiomid-project files from KDB directory** and vice versa. Each has its own git repo.
+
+### Pi SDK v2 Rules (axiomid-project)
+3. **Pi SDK v2 has NO `Pi.init()` method.** Do NOT add `Pi.init()` calls. The SDK auto-initializes via CDN script tag with `data-sandbox` attribute.
+4. **Auth format**: `Pi.authenticate({ scope: [...], onIncompletePaymentFound: fn })` — NOT the v1 array format `Pi.authenticate([scopes], callback)`.
+5. **Auth endpoint**: `/api/auth/pi` for Pi SDK auth, `/api/auth/connect` for demo wallets. Do NOT switch them.
+6. **Do NOT delete `/api/auth/pi/route.ts`** — it's the primary Pi auth endpoint.
+
+### KDB Rules
+7. **`.gitignore`**: Use `/content` not `content` — otherwise Quartz finds 0 files on Vercel.
+8. **Frontmatter**: `last_updated`, `tags`, `related` must be accurate.
+
+### aix-format Integration
+9. **Copy-local** for Pi KYC/identity code — do NOT use npm link, monorepo, or git submodule.
+10. **One-way dependency**: L0 (axiomid) → L1 (aix-format) → L2 (iqra). Never reverse.
+
+### Git Rules
+11. **Never force-push main branch** without explicit confirmation.
+12. **Always check `git status`** before committing — stage only intended files.
+
 ## Validation
 
 ```bash
