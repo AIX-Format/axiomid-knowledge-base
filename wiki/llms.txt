@@ -1,0 +1,28 @@
+# AIX Sovereign Stack — Knowledge Base
+
+> URL: https://axiomid-knowledge-base.vercel.app
+> Type: wikigraph / digital garden (Quartz SSG v4.5.2)
+> Codename: Echo369 | Spec: AIX/1.0 | v0.369.0
+
+## Structure
+
+Documents use [[wikilinks]] to connect concepts. Each doc has YAML frontmatter:
+- `title`, `status` (stable | in-progress), `layer` (L0-L6), `tags`, `related`
+
+## Key Documents
+
+- Architecture: /architecture
+- Stack Overview: /stack-overview
+- Roadmap: /roadmap
+- Changelog: /changelog
+- Decisions (10 ADRs): /decisions
+
+## Layer Map
+
+L0=axiomid | L1=aix-format | L2=iqra | L3=aix-agent-skills | L4=alphaaxiom | L5=piworker-os | L6=gemclaw
+
+## Latest Changes (May 2026)
+
+- KDB: Quartz site built (34→143 pages), deployed on Vercel
+- axiomid.app: production deploy with Ghost.build Postgres, UserAgent model, Pi SDK
+- Graph: 34 nodes, 155 edges — see /graph.json

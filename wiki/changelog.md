@@ -1,16 +1,88 @@
 ---
 title: "AIX Sovereign Stack — Changelog"
-last_updated: "2026-05-16"
+last_updated: "2026-05-24"
 status: "stable"
 tags: [changelog, updates, history]
 layer: "all"
 related:
   - "[[roadmap]]"
   - "[[decisions]]"
-  - "[[sessions/session-2026-05-16]]"
+  - "[[sessions/session-2026-05-24]]"
 ---
 
 # AIX Sovereign Stack — Changelog
+
+## Session 8: 2026-05-24 (Afternoon)
+
+### Knowledge Base & Link Validation
+* **Fixed 4 broken wikilinks** in `API-REGISTRY.md` and `cross-repo-architecture.md` (realigned to L0-L6 layer filenames).
+* Validated all 212 wikilinks across 42 files and updated the central dependency graph (`graph/graph.json`).
+* Added `session-2026-05-24.md` documenting current changes.
+
+### L0 App Planning & Design
+* Designed professional tier system: `Registered`, `Verified`, `Trusted`, `Sovereign`.
+* Created implementation plan for the glassmorphic Mission Control dashboard (`/dashboard` route) integrating GemClaw, IQRA, terminal outputs, and Pi Wallet payments.
+
+## Session 7: 2026-05-18 (Evening)
+
+### iqra Deep Cleanup
+- **55 dead files deleted** (~7.9KB): dead tests (root `tests/`), stale scripts (`src/scripts_v2/` 46 files → kept 6 active), legacy configs (`setup.yaml` with Qdrant refs, `e2e-mission.yml`), runtime leftover (`git-sovereign.ts`), frontend remnant (`SacredCard.tsx`), generated logs (`WISDOM_7.md`, `METAMORPHOSIS.md`)
+- **Reusable code preserved**: `knowledge_mcp_server.py` (LightRAG MCP), `aix_export.ts` (manifest CLI), `analyze_surahs.ts`, `enforce_headers.py`, `fix_imports_smart.cjs`, `start_iqra_ecosystem.sh`, `auto_improve.ts`, `dashboard/template.html`
+- **Git speed fixed**: added node_modules to `.git/info/exclude`, enabled `untrackedcache` + `fscache`
+- **Cleanup commit pushed**: `db2e324`
+
+### PiWorker-OS Cleanup + PRs
+- **5 dead files deleted**: `task.md`, `bootstrap.js`, `go.work.sum`, `PHASE_10_HARDENING.md`, `PHASE_11_RING3_ISOLATION.md`
+- **PR #60 merged**: lint-staged 17.0.5
+- **PR #58 resolved**: DID migration branch rebased (0 conflicts), already closed
+- **PR #44 merged**: Security gates — PR checklist, Semgrep scan, contract tests, security governance policy
+- **PR #39 closed**: Superseded by cleanup commits
+- **ix-format PR #198 pending**: v1.4.0 hardening (conflicts)
+
+### Architecture Progress
+- rebase fix/adr-0001-remove-qdrant-lancedb branch
+- API Proxy route live at `axiomid.app/api/proxy/iqra/*`
+- iqra-core package structure ready
+
+## Session 6: 2026-05-18 (Morning)
+
+### Pi SDK Sandbox postMessage Debugging
+- **Root cause**: `sendSDKMessage` → `window.parent.postMessage(l, f)` with hardcoded `"https://sandbox.minepi.com"` origin; top-level page has `window.parent === window` with `https://axiomid.app` origin → mismatch error
+- **Strategy 1** (`window.postMessage` override): `writable: true` on prototype — assignment creates own property that shadows prototype; Chrome does not block via WindowProxy. **Untested.**
+- **Strategy 2** (`Object.defineProperty(window, "parent")`): tested, failed — Chrome WindowProxy blocks defineProperty on window for `parent`
+- **Strategy 3** (`Window.prototype.parent` getter): tested, failed — extension own-property shadows prototype
+
+### CSP & SDK Loading
+- `'unsafe-inline'` added to `script-src` (Pi extension injected scripts)
+- Preconnect `Link` for `https://sandbox.minepi.com`
+- Hybrid `ensurePiSdk()`: extension `window.Pi` → CDN fallback (3 retries); never deletes existing Pi
+
+### Accessibility
+- `h3` → `h2` heading hierarchy; `userScalable: true`
+
+### Cross-Repo PR Analysis
+- **GemClaw** (9 PRs): #43 cleanup (-4935 lines, reviewed), 8 dependabot
+- **PiWorker-OS** (12 PRs): #58 KYC fix, #44 security checklist, #39 e2e tests, 9 dependabot/CI
+- **aix-agent-skills** (1 PR): #54 loadManifest fix (+12/-8, clean)
+- **aix-format** (6 PRs): #198 v1.4.0 hardening, 5 dependabot
+- **axiomid-project** (4 PRs): #39 Pi SDK+PWA, #37 SIWE, CI bumps, coderabbit tests
+- **iqra** (6 PRs): #110 ADR-0001 Qdrant/LanceDB removal, 5 dependabot
+
+---
+
+## Session 5: 2026-05-17
+
+### CodeRabbit Review — axiomid-project
+- **`connect/route.ts`**: explicit type validation for `walletAddress`, `piUid`, `piUsername` — 400 on malformed payloads
+- **`agent/activate/route.ts`**: `accessToken` validation against Pi API before accepting `walletAddress`; sanitized response (no `apiKeyHash`)
+- **`agent/route.ts`**: `accessToken` validation; SHA-256 hash API key before storage; all responses sanitized via `select`
+- **`error.tsx`** / **`global-error.tsx`**: stack traces only in dev mode; prod shows generic message + `digest`
+- **`global-error.tsx`**: added `lang="en"` + `:focus-visible` keyboard focus on RETRY
+- **`privacy/page.tsx`**: raw URL → semantic `<a>` with `target="_blank" rel="noopener noreferrer"`
+- **`pi/env.ts`**: `readOptional` noted but skipped (intentional)
+- **TypeScript**: clean compile, 0 errors
+
+---
 
 ## Session 4: 2026-05-16
 

@@ -1,8 +1,34 @@
 {
-  "generated": "2026-05-16T18:49:26.771862",
-  "total_docs": 34,
-  "total_edges": 155,
+  "generated": "2026-05-24T16:59:51.808759",
+  "total_docs": 43,
+  "total_edges": 201,
   "nodes": [
+    {
+      "id": "API-REGISTRY",
+      "title": "AIX API Registry — Cross-Repo Endpoints",
+      "status": "draft",
+      "tags": [
+        "api",
+        "registry",
+        "endpoints",
+        "cross-repo",
+        "contracts"
+      ],
+      "layer": "all",
+      "updated": "2026-05-18"
+    },
+    {
+      "id": "CROSS-REF-TEMPLATE",
+      "title": "CROSS-REF Template — لكل Repo",
+      "status": "draft",
+      "tags": [
+        "template",
+        "cross-ref",
+        "documentation"
+      ],
+      "layer": "all",
+      "updated": "2026-05-18"
+    },
     {
       "id": "L0-axiomid",
       "title": "AxiomID — Root Authority (L0)",
@@ -11,10 +37,12 @@
         "identity",
         "xp",
         "wallet",
-        "axiomid"
+        "axiomid",
+        "proxy",
+        "pi-sdk"
       ],
       "layer": "L0",
-      "updated": "2026-05-16"
+      "updated": "2026-05-18"
     },
     {
       "id": "L1-aix-format",
@@ -43,7 +71,7 @@
         "llm"
       ],
       "layer": "L2",
-      "updated": "2026-05-16"
+      "updated": "2026-05-18"
     },
     {
       "id": "L3-aix-agent-skills",
@@ -84,7 +112,7 @@
         "fleet"
       ],
       "layer": "L5",
-      "updated": "2026-05-16"
+      "updated": "2026-05-18"
     },
     {
       "id": "L6-gemclaw",
@@ -137,7 +165,7 @@
         "history"
       ],
       "layer": "all",
-      "updated": "2026-05-16"
+      "updated": "2026-05-24"
     },
     {
       "id": "clean-room-skills",
@@ -179,6 +207,20 @@
       "updated": "2026-05-16"
     },
     {
+      "id": "cross-repo-architecture",
+      "title": "Cross-Repo Architecture — 7 Repositories Integration",
+      "status": "draft",
+      "tags": [
+        "architecture",
+        "cross-repo",
+        "integration",
+        "graph",
+        "dependency"
+      ],
+      "layer": "all",
+      "updated": "2026-05-18"
+    },
+    {
       "id": "cross-system-flows",
       "title": "Cross-System Integration Flows",
       "status": "stable",
@@ -203,6 +245,21 @@
       ],
       "layer": "all",
       "updated": "2026-05-16"
+    },
+    {
+      "id": "did-implementation-plan",
+      "title": "DID Implementation Plan — axiomid.app + aix-format",
+      "status": "draft",
+      "tags": [
+        "did",
+        "identity",
+        "plan",
+        "implementation",
+        "axiomid",
+        "aix-format"
+      ],
+      "layer": "L0, L1",
+      "updated": "2026-05-18"
     },
     {
       "id": "execution-plan-10h",
@@ -278,6 +335,21 @@
       ],
       "layer": "all",
       "updated": "2026-05-16"
+    },
+    {
+      "id": "iqra-core-api",
+      "title": "IQRA Core API — Memory + Proxy Endpoints",
+      "status": "draft",
+      "tags": [
+        "iqra",
+        "api",
+        "memory",
+        "proxy",
+        "axiomid",
+        "l2"
+      ],
+      "layer": "L2",
+      "updated": "2026-05-18"
     },
     {
       "id": "iqra-core-security",
@@ -411,6 +483,52 @@
       "updated": "2026-05-16"
     },
     {
+      "id": "sessions/session-2026-05-17",
+      "title": "Session Log — 2026-05-17",
+      "status": "stable",
+      "tags": [
+        "session",
+        "history",
+        "review",
+        "security",
+        "axiomid"
+      ],
+      "layer": "all",
+      "updated": "2026-05-17"
+    },
+    {
+      "id": "sessions/session-2026-05-18",
+      "title": "Session Log — 2026-05-18",
+      "status": "unstable",
+      "tags": [
+        "session",
+        "history",
+        "debugging",
+        "postmessage",
+        "pisdk",
+        "sandbox",
+        "pr-review",
+        "axiomid"
+      ],
+      "layer": "all",
+      "updated": "2026-05-18"
+    },
+    {
+      "id": "sessions/session-2026-05-24",
+      "title": "Session Log — 2026-05-24",
+      "status": "in-progress",
+      "tags": [
+        "session",
+        "history",
+        "L0-auth",
+        "tiers",
+        "dashboard",
+        "validation"
+      ],
+      "layer": "all",
+      "updated": "2026-05-24"
+    },
+    {
       "id": "stack-map",
       "title": "AIX Stack — Full Map",
       "status": "stable",
@@ -449,10 +567,66 @@
       ],
       "layer": "L1,L3,L5",
       "updated": "2026-05-16"
+    },
+    {
+      "id": "zero-agent-stack",
+      "title": "Zero Agent Stack — Vercel Labs Tools for AI Agents",
+      "status": "draft",
+      "tags": [
+        "zero",
+        "agents",
+        "tooling",
+        "vercel",
+        "browser",
+        "systems",
+        "language"
+      ],
+      "layer": "all",
+      "updated": "2026-05-18"
     }
   ],
   "edges": [
     {
+      "source": "API-REGISTRY",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "API-REGISTRY",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "API-REGISTRY",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "API-REGISTRY",
+      "target": "L6-gemclaw",
+      "type": "related"
+    },
+    {
+      "source": "API-REGISTRY",
+      "target": "cross-repo-architecture",
+      "type": "related"
+    },
+    {
+      "source": "API-REGISTRY",
+      "target": "stack-map",
+      "type": "related"
+    },
+    {
+      "source": "CROSS-REF-TEMPLATE",
+      "target": "API-REGISTRY",
+      "type": "related"
+    },
+    {
+      "source": "CROSS-REF-TEMPLATE",
+      "target": "cross-repo-architecture",
+      "type": "related"
+    },
+    {
       "source": "L0-axiomid",
       "target": "L1-aix-format",
       "type": "related"
@@ -460,6 +634,11 @@
     {
       "source": "L0-axiomid",
       "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "L0-axiomid",
+      "target": "iqra-core-api",
       "type": "related"
     },
     {
@@ -505,6 +684,11 @@
     {
       "source": "L2-iqra",
       "target": "architecture",
+      "type": "related"
+    },
+    {
+      "source": "L2-iqra",
+      "target": "iqra-core-api",
       "type": "related"
     },
     {
@@ -654,7 +838,7 @@
     },
     {
       "source": "changelog",
-      "target": "sessions/session-2026-05-16",
+      "target": "sessions/session-2026-05-24",
       "type": "related"
     },
     {
@@ -703,6 +887,51 @@
       "type": "related"
     },
     {
+      "source": "cross-repo-architecture",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "cross-repo-architecture",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "cross-repo-architecture",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "cross-repo-architecture",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "cross-repo-architecture",
+      "target": "L4-alphaaxiom",
+      "type": "related"
+    },
+    {
+      "source": "cross-repo-architecture",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "cross-repo-architecture",
+      "target": "L6-gemclaw",
+      "type": "related"
+    },
+    {
+      "source": "cross-repo-architecture",
+      "target": "stack-map",
+      "type": "related"
+    },
+    {
+      "source": "cross-repo-architecture",
+      "target": "zero-agent-stack",
+      "type": "related"
+    },
+    {
       "source": "cross-system-flows",
       "target": "L2-iqra",
       "type": "related"
@@ -745,6 +974,26 @@
     {
       "source": "decisions",
       "target": "x402-plan",
+      "type": "related"
+    },
+    {
+      "source": "did-implementation-plan",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "did-implementation-plan",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "did-implementation-plan",
+      "target": "decisions",
+      "type": "related"
+    },
+    {
+      "source": "did-implementation-plan",
+      "target": "pi-network",
       "type": "related"
     },
     {
@@ -988,6 +1237,26 @@
       "type": "related"
     },
     {
+      "source": "iqra-core-api",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "iqra-core-api",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "iqra-core-api",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "iqra-core-api",
+      "target": "cross-repo-architecture",
+      "type": "related"
+    },
+    {
       "source": "iqra-core-security",
       "target": "L2-iqra",
       "type": "related"
@@ -1143,6 +1412,71 @@
       "type": "related"
     },
     {
+      "source": "sessions/session-2026-05-17",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-17",
+      "target": "sessions/session-2026-05-16",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-18",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-18",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-18",
+      "target": "pi-network",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-18",
+      "target": "sessions/session-2026-05-17",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-24",
+      "target": "L0-axiomid",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-24",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-24",
+      "target": "L2-iqra",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-24",
+      "target": "L6-gemclaw",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-24",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-24",
+      "target": "pi-network",
+      "type": "related"
+    },
+    {
+      "source": "sessions/session-2026-05-24",
+      "target": "sessions/session-2026-05-18",
+      "type": "related"
+    },
+    {
       "source": "stack-map",
       "target": "codebase-sizes",
       "type": "related"
@@ -1225,6 +1559,36 @@
     {
       "source": "x402-plan",
       "target": "pi-network",
+      "type": "related"
+    },
+    {
+      "source": "zero-agent-stack",
+      "target": "L1-aix-format",
+      "type": "related"
+    },
+    {
+      "source": "zero-agent-stack",
+      "target": "L3-aix-agent-skills",
+      "type": "related"
+    },
+    {
+      "source": "zero-agent-stack",
+      "target": "L5-piworker-os",
+      "type": "related"
+    },
+    {
+      "source": "zero-agent-stack",
+      "target": "changelog",
+      "type": "related"
+    },
+    {
+      "source": "zero-agent-stack",
+      "target": "cross-repo-architecture",
+      "type": "related"
+    },
+    {
+      "source": "zero-agent-stack",
+      "target": "stack-overview",
       "type": "related"
     }
   ]
