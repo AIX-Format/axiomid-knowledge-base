@@ -5,8 +5,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "cd quartz && npm run quartz build",
-    "dev": "cd quartz && npm run quartz build --serve",
+    "build": "rm -rf quartz/content && cp -R wiki quartz/content && cd quartz && npm run quartz build",
+    "dev": "rm -rf quartz/content && cp -R wiki quartz/content && cd quartz && npm run quartz build --serve",
     "update-graph": "python3 scripts/update-wiki.py",
     "validate": "python3 scripts/validate-links.py"
   },

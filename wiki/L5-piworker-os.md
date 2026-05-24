@@ -1,6 +1,6 @@
 ---
 title: "PiWorker-OS — Pi Treasury & Body (L5)"
-last_updated: "2026-05-16"
+last_updated: "2026-05-18"
 status: "stable"
 tags: [pi-network, treasury, escrow, go, fleet]
 layer: "L5"
@@ -15,7 +15,12 @@ related:
 
 # PiWorker-OS — Pi Treasury & Body (L5)
 
-> 5,294 lines TS + 8,100 lines Go | Next.js 15 + Go sidecar
+## Cleanup (Session 7)
+- 5 dead files removed: `bootstrap.js`, `task.md`, `go.work.sum`, `PHASE_10_HARDENING.md`, `PHASE_11_RING3_ISOLATION.md`
+- PR #60 (lint-staged) → merged
+- PR #58 (DID migration) → rebased, auto-closed
+- PR #44 (security gates) → merged: Semgrep, contract tests, security checklist
+- PR #39 (E2E tests) → closed (superseded)
 
 ## الرئيسية 7 Flows
 

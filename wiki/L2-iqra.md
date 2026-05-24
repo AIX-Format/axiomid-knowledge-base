@@ -1,6 +1,6 @@
 ---
 title: "IQRA — Sovereign AI Runtime (L2)"
-last_updated: "2026-05-16"
+last_updated: "2026-05-18"
 status: "stable"
 tags: [runtime, memory, damir, quran, evolution, llm]
 layer: "L2"
@@ -10,13 +10,14 @@ related:
   - "[[L3-aix-agent-skills]]"
   - "[[memory-systems-comparison]]"
   - "[[architecture]]"
+  - "[[iqra-core-api]]"
 ---
 
 # IQRA — Sovereign AI Runtime (L2)
 
-> 52,447 lines TS + 4,421 lines Go | Next.js 15
+> Next.js 15 API-First (no frontend)
 
-## 1. Core Runtime (01-core — 5,512 lines)
+## 1. Core Runtime (01-core)
 
 ### Septenary Execution Loop
 ```
@@ -29,27 +30,23 @@ Phase 3: TAZKIYAH (تزكية) — Correction & improvement
 - Every 40 cycles → Topological Flood (full memory reset)
 - Every 3 errors → Tasbih Reset
 
-### MissionControl (434 lines)
+### MissionControl
 - Classifies missions: coding, quran_analysis, research, reasoning, creative
 - 4 phases: Resonance → Research → Validation → Execution
 - Each phase uses different LLM provider (Gemini Flash/Pro, Groq)
 - Damir Conscience checks intention before each execution
 
-## 2. Memory System (03-memory — 4,115 lines)
+## 2. Memory System (03-memory)
 
-### 5-Layer MemoryBridge
+### Reflection Store (replaces Qdrant/LanceDB per ADR-0001)
+| Layer | Implementation | Purpose |
+|-------|---------------|---------|
+| **HOT** | RAM (Map) | Recent context |
+| **WARM** | SQLite | Short-term persistence |
+| **COLD** | Redis via Upstash | Long-term |
+| **REFLECTION** | JSON-based | Sovereign memory store |
 
-| Layer | Storage | Speed | TTL | Size |
-|-------|---------|-------|-----|------|
-| **HOT** | RAM (Map) | <1ms | 1 hour | 49 items |
-| **WARM** | MicroMemory (SQLite) | <5ms | 7 days | Unlimited |
-| **COLD** | IQRAMemory (Redis) | <50ms | 30 days | Unlimited |
-| **VECTOR** | Qdrant | <100ms | ∞ | Unlimited |
-| **ARCHIVE** | LanceDB | <200ms | ∞ | Unlimited |
-
-Features: LRU eviction, cache promotion, broadcast, quantum memory, pattern bridge.
-
-## 3. Damir Conscience (06-security — 3,003 lines)
+## 3. Damir Conscience (06-security)
 
 Graded Linear Logic ethics engine:
 - Every resource consumed once only

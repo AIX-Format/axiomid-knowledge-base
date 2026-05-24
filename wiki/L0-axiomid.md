@@ -1,19 +1,29 @@
 ---
 title: "AxiomID — Root Authority (L0)"
-last_updated: "2026-05-16"
+last_updated: "2026-05-18"
 status: "stable"
-tags: [identity, xp, wallet, axiomid]
+tags: [identity, xp, wallet, axiomid, proxy, pi-sdk]
 layer: "L0"
 related:
   - "[[stack-overview]]"
   - "[[L1-aix-format]]"
   - "[[pi-network]]"
   - "[[changelog]]"
+  - "[[iqra-core-api]]"
 ---
 
 # AxiomID — Root Authority (L0)
 
-> ~2,000 lines TS | Next.js 16 + Prisma
+## API Proxy to iqra
+- Route: `axiomid.app/api/proxy/iqra/[...path]`
+- Tier-based auth: Spark for memory, Pulse for conscience/mission
+- Rate limiting (60 req/min), timeout (12s), logging
+- Hides iqra URL, no CORS
+
+## Open PRs
+- #39 (Pi SDK + PWA): conflicting
+- #37 (SIWE): mergeable
+- #38 (CodeRabbit tests): mergeable
 
 ## Core Flows
 
