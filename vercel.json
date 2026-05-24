@@ -5,5 +5,5 @@
   "outputDirectory": "quartz/public",
   "framework": null,
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": false
 }
